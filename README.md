@@ -5,11 +5,25 @@ This will download the zip file of the project. Now unzip it and enter the folde
 Open your IDE of preference and open terminal.
 To build the project, simply type:
 ```bash
-make build
+$ make build
 ```
 To run the project, type:
 ```bash
-make run
+$ make run
 ```
 This will make an executable file in the `bin/` directory named `Tutorial.exe`
 Write your C code into the `main.c` file
+
+Or if you have a `Bash` environment like **Linux** or **Git CMD** or even **WSL** based system, you might wanna
+run the following command
+```bash
+$ sh run.sh
+```
+Or you just want to build it,
+```bash
+$ sh run.sh build
+```
+To clean all binaries,
+```bash
+$ sh run.sh clean
+```
