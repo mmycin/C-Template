@@ -1,8 +1,9 @@
 build:
-	@gcc main.c -o bin\Tutorial.exe
+	mkdir bin
+	gcc main.c -o bin\Tutorial.exe
 
 run: build
-	@cls
-	@.\bin\Tutorial.exe
-	@pause
-	@cls
+	cls
+	bin\Tutorial.exe
+	pause
+	cls
