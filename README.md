@@ -27,3 +27,17 @@ To clean all binaries,
 ```bash
 $ sh run.sh clean
 ```
+
+Or if you are in a windows system and don't know what to do, then just open your terminal (By default: CMD) 
+and run the command bellow:
+```bash
+$ run.bat
+```
+Or you just want to build it,
+```bash
+$ run.bat build
+```
+To clean all binaries,
+```bash
+$ run.bat clean
+```
