@@ -1,7 +1,6 @@
+#include "helper.h"
 #include <stdio.h>
 
-int main()
-{
+void say_hello() {
     printf("Hello World\n");
-    return 0;
 }

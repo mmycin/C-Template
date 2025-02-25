@@ -32,7 +32,7 @@ fi
 
 # Build action
 if [ "$action" == "build" ] || [ "$action" == "build_and_run" ]; then
-    gcc main.c -o bin/main
+    gcc src/main.c lib/helper.c -I lib -o bin/app
     if [ $? -eq 0 ]; then
         echo "Build successful."
     else
@@ -47,7 +47,7 @@ if [ "$action" == "run" ] || [ "$action" == "build_and_run" ]; then
     clear
     end=$(date +%s.%N)
     elapsed=$(awk "BEGIN {print $end - $start}")
-    ./bin/main
+    ./bin/app
     echo ""
     echo "Program executed in $elapsed seconds"
 fi

@@ -27,7 +27,7 @@ set "start=%time%"
 
 :: Build action
 if "%action%"=="build" or "%action%"=="build_and_run" (
-  gcc main.c -o bin\main.exe
+  gcc src\main.c lib\helper.c -I lib -o bin\app.exe
   if %errorlevel% neq 0 (
     echo Compilation failed.
     exit /b 1
@@ -39,7 +39,7 @@ if "%action%"=="build" or "%action%"=="build_and_run" (
 :: Run action
 if "%action%"=="run" or "%action%"=="build_and_run" (
   cls
-  bin\main.exe
+  bin\app.exe
   echo.
   
   :: Get end time
