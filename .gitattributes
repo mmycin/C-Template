@@ -1,0 +1,16 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# C source files
+*.c text diff=c
+*.h text diff=c
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Makefiles must always use tabs
+Makefile text eol=lf
+
+# Binary files
+*.exe binary
