@@ -27,7 +27,7 @@ set "start=%time%"
 
 :: Build action
 if "%action%"=="build" or "%action%"=="build_and_run" (
-  gcc src\main.c lib\helper.c -I lib -o bin\app.exe
+  tcc\tcc src\main.c lib\helper.c -I lib -o bin\app.exe
   if %errorlevel% neq 0 (
     echo Compilation failed.
     exit /b 1
