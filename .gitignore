@@ -2,3 +2,4 @@ bin/
 build/
 target/
 *.exe
+!cc/*.exe
