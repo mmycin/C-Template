@@ -48,26 +48,6 @@ $ make run
 
 This will execute the `Tutorial.exe` file from the **bin/** directory and show you your project in action.
 
-### For Bash Lovers (Linux, Git CMD, or WSL)
-
-If you're using **Linux**, **Git CMD**, or **WSL** (Windows Subsystem for Linux), you’re living on the wild side! Here’s how to run things in your terminal:
-
-- To **run the project**, use:
-  ```bash
-  $ sh run.sh
-  ```
-  This will run your project, assuming you’ve already built it.
-
-- If you just want to **build the project** (and not run it yet), type:
-  ```bash
-  $ sh run.sh build
-  ```
-
-- To **clean up** all the binaries (like a digital spring cleaning), use:
-  ```bash
-  $ sh run.sh clean
-  ```
-
 ### For Windows Users Who Prefer Simplicity
 
 If you’re on Windows and prefer not to dive into the terminal commands, you can use the batch script to do the heavy lifting for you.
