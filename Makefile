@@ -1,17 +1,11 @@
 build:
-	@cmd /c color 6
 	@cmd /c echo Building...
 	@cmd /c if not exist bin/ mkdir bin
-	@gcc src\main.c lib\helper.c -I lib -o bin\app.exe
-	@cmd /c color 2
+	@g++ src\main.cpp lib\helper.cpp -I lib -o bin\app
 	@cmd /c echo Building Successful
 
 run: build
-	@cmd /c cls
-	@cmd /c color 7
-
-	@cmd /c bin\app.exe
-	@cmd /c pause
+	@./bin/app
 
 clean:
 	@cmd /c echo Cleaning the project...

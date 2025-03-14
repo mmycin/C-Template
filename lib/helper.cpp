@@ -1,8 +1,10 @@
 #include "helper.h"
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 void say_hello() {
-    printf("Hello World\n");
+    cout << "Hello World" << endl;
 }
 
 int sum(int a, int b) {

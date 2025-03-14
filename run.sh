@@ -32,7 +32,7 @@ fi
 
 # Build action
 if [ "$action" == "build" ] || [ "$action" == "build_and_run" ]; then
-    gcc src/main.c lib/helper.c -I lib -o bin/app
+    g++ src/main.cpp lib/helper.cpp -I lib -o bin/app
     if [ $? -eq 0 ]; then
         echo "Build successful."
     else
