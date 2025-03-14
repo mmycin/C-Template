@@ -67,26 +67,7 @@ If you're using **Linux**, **Git CMD**, or **WSL** (Windows Subsystem for Linux)
   ```bash
   $ sh run.sh clean
   ```
-
-### For Windows Users Who Prefer Simplicity
-
-If you’re on Windows and prefer not to dive into the terminal commands, you can use the batch script to do the heavy lifting for you.
-
-- To **run the project**, simply type:
-  ```bash
-  $ run.bat
-  ```
-
-- To **build** the project:
-  ```bash
-  $ run.bat build
-  ```
-
-- To **clean** the project and remove the compiled files:
-  ```bash
-  $ run.bat clean
-  ```
-
+  
 ### Writing Your Code
 
 All of your magic happens in the **main.c** file. Just open it in any text editor or IDE, write your C code, and then run the above steps to see your work in action.
